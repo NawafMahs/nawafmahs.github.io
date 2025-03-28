@@ -1,0 +1,29 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "Person",
+  "name": "Nawaf Mahsoun",
+  "url": "https://nawafmahsoun.com",
+  "image": "",
+  "jobTitle": ".NET Developer",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Self-employed"
+  },
+  "alumniOf": {
+    "@type": "EducationalOrganization",
+    "name": "Ebla Private University"
+  },
+  "knowsLanguage": ["Arabic", "English", "Turkish"],
+  "knowsAbout": [
+    "ASP.NET Core MVC",
+    ".NET Core",
+    "Blazor",
+    "Entity Framework Core",
+    "xUnit Testing",
+    "Clean Architecture",
+    "Domain-Driven Design"
+  ],
+  "sameAs": [
+    "https://www.linkedin.com/in/nawaf-mahsoun-493092204"
+  ]
+}
