@@ -1,0 +1,73 @@
+/* RTL Specific Styles */
+[dir="rtl"] {
+    text-align: right;
+}
+
+[dir="rtl"] .nav-links {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+[dir="rtl"] .header-controls {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+[dir="rtl"] .section-title::after {
+    left: auto;
+    right: 0;
+}
+
+[dir="rtl"] .experience-item {
+    padding-left: 0;
+    padding-right: 20px;
+    border-left: none;
+    border-right: 2px solid var(--border-color);
+}
+
+[dir="rtl"] .experience-date {
+    right: auto;
+    left: 0;
+}
+
+[dir="rtl"] .skill-item {
+    margin-right: 0;
+    margin-left: 1rem;
+}
+
+[dir="rtl"] .contact-info i {
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+[dir="rtl"] .social-links {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .mobile-menu-toggle {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+[dir="rtl"] .close-menu {
+    right: auto;
+    left: 20px;
+}
+
+/* RTL Mobile Menu */
+@media (max-width: 768px) {
+    [dir="rtl"] .nav-links {
+        left: -300px;
+        right: auto;
+        box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    [dir="rtl"] .nav-links.active {
+        left: 0;
+        right: auto;
+    }
+
+    [dir="rtl"] .nav-links a:hover {
+        transform: translateX(-5px);
+    }
+} 

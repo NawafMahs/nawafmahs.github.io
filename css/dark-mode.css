@@ -68,3 +68,123 @@ body {
 section, header, footer, .profile, .languages li, .skill-category li::before {
   transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
+
+[data-theme="dark"] {
+    --primary-color: #1a1a1a;
+    --secondary-color: #3b82f6;
+    --accent-color: #60a5fa;
+    --text-color: #e5e7eb;
+    --light-text: #9ca3af;
+    --bg-color: #111827;
+    --section-bg: #1f2937;
+    --header-bg: rgba(17, 24, 39, 0.95);
+    --card-bg: #374151;
+    --border-color: #374151;
+    --shadow-color: rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+[data-theme="dark"] header {
+    background: var(--header-bg);
+    box-shadow: 0 1px 3px var(--shadow-color);
+}
+
+[data-theme="dark"] .main-nav a {
+    color: var(--text-color);
+}
+
+[data-theme="dark"] .theme-toggle button {
+    border-color: var(--light-text);
+    color: var(--text-color);
+}
+
+[data-theme="dark"] .theme-toggle button:hover {
+    background: var(--section-bg);
+    border-color: var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+[data-theme="dark"] section {
+    background: var(--section-bg);
+    box-shadow: 0 10px 30px var(--shadow-color);
+}
+
+[data-theme="dark"] .skill-category {
+    background: var(--card-bg);
+    box-shadow: 0 5px 15px var(--shadow-color);
+}
+
+[data-theme="dark"] .skill-category:hover {
+    box-shadow: 0 8px 25px var(--shadow-color);
+}
+
+[data-theme="dark"] .contact-info {
+    background: var(--card-bg);
+    box-shadow: 0 5px 15px var(--shadow-color);
+}
+
+[data-theme="dark"] .social-link {
+    background: var(--card-bg);
+    color: var(--text-color);
+}
+
+[data-theme="dark"] .social-link:hover {
+    background: var(--secondary-color);
+    color: white;
+}
+
+[data-theme="dark"] .job, .education-item {
+    background: var(--card-bg);
+    border-color: var(--border-color);
+}
+
+[data-theme="dark"] .company, .institution {
+    color: var(--light-text);
+}
+
+[data-theme="dark"] .duration, .location {
+    color: var(--light-text);
+}
+
+[data-theme="dark"] .achievements li {
+    border-color: var(--border-color);
+}
+
+[data-theme="dark"] .achievements strong {
+    color: var(--secondary-color);
+}
+
+[data-theme="dark"] .languages li {
+    background: var(--card-bg);
+    box-shadow: 0 2px 5px var(--shadow-color);
+}
+
+[data-theme="dark"] .languages strong {
+    color: var(--secondary-color);
+}
+
+[data-theme="dark"] .glitch {
+    background: linear-gradient(135deg, var(--text-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+[data-theme="dark"] .cursor {
+    background: var(--secondary-color);
+}
+
+[data-theme="dark"] .cursor-follower {
+    border-color: var(--secondary-color);
+}
+
+[data-theme="dark"] .cursor-hover {
+    border-color: var(--secondary-color);
+}
+
+[data-theme="dark"] .cursor-follower-hover {
+    border-color: var(--accent-color);
+}

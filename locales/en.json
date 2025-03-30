@@ -88,8 +88,72 @@
   "language2": "English: Advanced (C1) - Proficient in reading, writing, and professional communication",
   "language3": "Turkish: Basic (A2) - Elementary proficiency",
   
-  "footer_copyright": "© 2025 Nawaf Mahsoun. All rights reserved.",
+  "section_tech_stack": "TECHNICAL STACK",
+  "tech_dotnet_name": ".NET Core",
+  "tech_dotnet_desc": "Building robust, high-performance backend services and APIs",
+  
+  "tech_aspnet_name": "ASP.NET Core MVC",
+  "tech_aspnet_desc": "Developing scalable web applications with Model-View-Controller architecture",
+  
+  "tech_blazor_name": "Blazor",
+  "tech_blazor_desc": "Creating interactive web UIs using C# instead of JavaScript",
+  
+  "tech_ef_name": "Entity Framework Core",
+  "tech_ef_desc": "ORM for database access with LINQ to Entities support",
+  
+  "tech_sql_name": "SQL Server",
+  "tech_sql_desc": "Designing and optimizing relational database solutions",
+  
+  "tech_azure_name": "Azure Cloud",
+  "tech_azure_desc": "Deploying scalable applications with Azure App Services, Functions and more",
+  
+  "tech_xunit_name": "xUnit",
+  "tech_xunit_desc": "Implementing unit and integration tests for reliable code",
+  
+  "tech_clean_name": "Clean Architecture",
+  "tech_clean_desc": "Designing systems with separation of concerns and dependency inversion",
+  
+  "tech_ddd_name": "Domain-Driven Design",
+  "tech_ddd_desc": "Modeling complex domains with ubiquitous language and bounded contexts",
+  
+  "tech_docker_name": "Docker",
+  "tech_docker_desc": "Containerizing applications for consistent deployment across environments",
+  
+  "tech_cicd_name": "CI/CD Pipelines",
+  "tech_cicd_desc": "Automating build, test and deployment processes with Azure DevOps",
+  
+  "tech_git_name": "Git & GitHub",
+  "tech_git_desc": "Version control and collaborative software development",
+  
+  "tech_html_name": "HTML & CSS",
+  "tech_html_desc": "Creating responsive and accessible web interfaces",
+  
+  "tech_js_name": "JavaScript",
+  "tech_js_desc": "Enhancing user interfaces with dynamic client-side functionality",
+  
+  "tech_agile_name": "Agile Methodology",
+  "tech_agile_desc": "Working in Scrum teams with sprint planning and iterative development",
+  
+  "section_dev_tools": "DEVELOPMENT TOOLS",
+  "tool_vs_name": "Visual Studio 2022",
+  "tool_vs_desc": "Primary IDE for C# and .NET development with powerful debugging tools",
+  
+  "tool_vscode_name": "VS Code",
+  "tool_vscode_desc": "Lightweight code editor for front-end development and quick edits",
+  
+  "tool_postman_name": "Postman",
+  "tool_postman_desc": "API development and testing with automated test suites",
+  
+  "tool_swagger_name": "Swagger",
+  "tool_swagger_desc": "API documentation and interactive testing interface",
+  
+  "tool_rider_name": "Rider",
+  "tool_rider_desc": "Cross-platform .NET IDE with advanced code analysis",
+  
+  "footer_copyright": " 2025 Nawaf Mahsoun. All rights reserved.",
   
   "theme_dark": "Dark Mode",
-  "theme_light": "Light Mode"
+  "theme_light": "Light Mode",
+  
+  "back_to_top": "Back to Top"
 }

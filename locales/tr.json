@@ -88,8 +88,72 @@
   "language2": "İngilizce: İleri düzey (C1) - Okuma, yazma ve profesyonel iletişimde yetkin",
   "language3": "Türkçe: Temel (A2) - Başlangıç seviyesi yeterlilik",
   
-  "footer_copyright": "© 2025 Nawaf Mahsoun. Tüm hakları saklıdır.",
+  "section_tech_stack": "TEKNİK YIĞIN",
+  "tech_dotnet_name": ".NET Core",
+  "tech_dotnet_desc": "Güçlü, yüksek performanslı arka uç hizmetleri ve API'ler oluşturma",
+  
+  "tech_aspnet_name": "ASP.NET Core MVC",
+  "tech_aspnet_desc": "Model-Görünüm-Denetleyici mimarisi ile ölçeklenebilir web uygulamaları geliştirme",
+  
+  "tech_blazor_name": "Blazor",
+  "tech_blazor_desc": "JavaScript yerine C# kullanarak etkileşimli web kullanıcı arayüzleri oluşturma",
+  
+  "tech_ef_name": "Entity Framework Core",
+  "tech_ef_desc": "LINQ to Entities desteği ile veritabanı erişimi için ORM",
+  
+  "tech_sql_name": "SQL Server",
+  "tech_sql_desc": "İlişkisel veritabanı çözümlerini tasarlama ve optimize etme",
+  
+  "tech_azure_name": "Azure Bulut",
+  "tech_azure_desc": "Azure App Services, Functions ve daha fazlasıyla ölçeklenebilir uygulamalar dağıtma",
+  
+  "tech_xunit_name": "xUnit",
+  "tech_xunit_desc": "Güvenilir kod için birim ve entegrasyon testleri uygulama",
+  
+  "tech_clean_name": "Temiz Mimari",
+  "tech_clean_desc": "Kaygıların ayrılması ve bağımlılık tersine çevirme ile sistemler tasarlama",
+  
+  "tech_ddd_name": "Alan Odaklı Tasarım",
+  "tech_ddd_desc": "Yaygın dil ve sınırlı bağlamlarla karmaşık alanları modelleme",
+  
+  "tech_docker_name": "Docker",
+  "tech_docker_desc": "Ortamlar arasında tutarlı dağıtım için uygulamaları konteynerleştirme",
+  
+  "tech_cicd_name": "CI/CD Boru Hatları",
+  "tech_cicd_desc": "Azure DevOps ile derleme, test ve dağıtım süreçlerini otomatikleştirme",
+  
+  "tech_git_name": "Git ve GitHub",
+  "tech_git_desc": "Sürüm kontrolü ve işbirlikçi yazılım geliştirme",
+  
+  "tech_html_name": "HTML ve CSS",
+  "tech_html_desc": "Duyarlı ve erişilebilir web arayüzleri oluşturma",
+  
+  "tech_js_name": "JavaScript",
+  "tech_js_desc": "Dinamik istemci tarafı işlevselliği ile kullanıcı arayüzlerini geliştirme",
+  
+  "tech_agile_name": "Çevik Metodoloji",
+  "tech_agile_desc": "Sprint planlama ve yinelemeli geliştirme ile Scrum ekiplerinde çalışma",
+  
+  "section_dev_tools": "GELİŞTİRME ARAÇLARI",
+  "tool_vs_name": "Visual Studio 2022",
+  "tool_vs_desc": "Güçlü hata ayıklama araçlarıyla C# ve .NET geliştirme için birincil IDE",
+  
+  "tool_vscode_name": "VS Code",
+  "tool_vscode_desc": "Ön uç geliştirme ve hızlı düzenlemeler için hafif kod düzenleyici",
+  
+  "tool_postman_name": "Postman",
+  "tool_postman_desc": "Otomatik test paketleri ile API geliştirme ve test etme",
+  
+  "tool_swagger_name": "Swagger",
+  "tool_swagger_desc": "API dokümantasyonu ve etkileşimli test arayüzü",
+  
+  "tool_rider_name": "Rider",
+  "tool_rider_desc": "Gelişmiş kod analizi ile platformlar arası .NET IDE",
+  
+  "footer_copyright": " 2025 Nawaf Mahsoun. Tüm hakları saklıdır.",
   
   "theme_dark": "Karanlık Mod",
-  "theme_light": "Aydınlık Mod"
+  "theme_light": "Aydınlık Mod",
+  
+  "back_to_top": "Yukarı Çık"
 }

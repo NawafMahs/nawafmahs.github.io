@@ -1,65 +1,44 @@
-/* Additional styles for RTL support */
-body.rtl {
+/* Language direction handling */
+[dir="rtl"] {
   direction: rtl;
   text-align: right;
 }
 
-body.rtl .job-meta, 
-body.rtl .education-meta {
+[dir="ltr"] {
+  direction: ltr;
   text-align: left;
 }
 
-body.rtl .skill-category li {
-  padding-right: 20px;
-  padding-left: 0;
-}
-
-body.rtl .skill-category li::before {
-  right: 0;
+/* Responsive layout adjustments */
+.nav-links {
   left: auto;
+  right: -300px;
 }
 
-/* Performance optimizations */
-img {
-  max-width: 100%;
-  height: auto;
+[dir="rtl"] .nav-links {
+  right: auto;
+  left: -300px;
 }
 
-/* Add print styles */
-@media print {
-  header, footer, .language-selector, .theme-toggle {
-    display: none;
-  }
-  
-  body {
-    background-color: white;
-    color: black;
-  }
-  
-  section {
-    break-inside: avoid;
-    page-break-inside: avoid;
-    background-color: white;
-    box-shadow: none;
-    margin-bottom: 20px;
-    padding: 15px 0;
-  }
-  
-  a {
-    color: black;
-    text-decoration: none;
-  }
-  
-  .profile {
-    background-color: white;
-    color: black;
-  }
-  
-  .profile h1 {
-    color: black;
-  }
-  
-  .contact-item a {
-    color: black;
-  }
+[dir="rtl"] .nav-links.active {
+  left: 0;
+}
+
+/* Grid adjustments */
+.work-grid,
+.frameworks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+[dir="rtl"] .work-item {
+  direction: rtl;
+}
+
+/* Text alignment */
+.section-title,
+.hero-title,
+.hero-description {
+  text-align: start;
 }

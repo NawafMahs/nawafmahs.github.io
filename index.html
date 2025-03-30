@@ -14,11 +14,10 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Nawaf Mahsoun - .NET Developer">
     <meta name="twitter:description" content="Experienced .NET Developer specializing in ASP.NET Core MVC, Blazor, and unit testing with xUnit and mock frameworks">
-    <title>Nawaf Mahsoun - .NET Developer | ASP.NET Core MVC | Blazor | xUnit</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title data-translate="profile_name">Nawaf Mahsoun</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/dark-mode.css">
-    <link rel="stylesheet" href="css/optimizations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- Language selection script -->
     <script src="js/language.js" defer></script>
     <!-- Dark mode script -->
@@ -62,205 +61,431 @@
     </script>
 </head>
 <body>
+    <div class="noise"></div>
+    
     <header>
-        <div class="container">
-            <div class="language-selector">
-                <button data-lang="en" class="active">English</button>
-                <button data-lang="ar">العربية</button>
-                <button data-lang="tr">Türkçe</button>
+        <nav class="main-nav container">
+            <a href="#" class="nav-brand">NM</a>
+            
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <div class="mobile-menu-overlay"></div>
+            
+            <div class="nav-links">
+                <button class="close-menu" aria-label="Close menu">
+                    <i class="fas fa-times"></i>
+                </button>
+                <a href="#home" data-translate="section_summary">Summary</a>
+                <a href="#work" data-translate="section_experience">Experience</a>
+                <a href="#about" data-translate="section_skills">Skills</a>
+                <a href="#contact" data-translate="contact_email">Contact</a>
             </div>
-            <div class="theme-toggle">
-                <button id="theme-toggle-btn">
+
+            <div class="header-controls">
+                <div class="language-selector">
+                    <button class="lang-btn" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="ar">AR</button>
+                    <button class="lang-btn" data-lang="tr">TR</button>
+                </div>
+                <button id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-sun"></i>
                     <i class="fas fa-moon"></i>
-                    <span data-i18n="theme_dark">Dark Mode</span>
                 </button>
             </div>
-        </div>
+        </nav>
     </header>
 
-    <main class="container">
-        <section class="profile">
-            <h1 class="name" data-i18n="profile_name">NAWAF MAHSOUN</h1>
-            <p class="title" data-i18n="profile_title">Dedicated .NET Developer</p>
-            <div class="contact-info">
-                <div class="contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <span data-i18n="contact_email">Email</span>: <a href="mailto:nawafmahsoun11@gmail.com">nawafmahsoun11@gmail.com</a>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-phone"></i>
-                    <span data-i18n="contact_phone">Phone</span>: <span>+963 9574 494 79</span>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span data-i18n="contact_location">Location</span>: <span>Aleppo, Syria</span>
-                </div>
-                <div class="contact-item">
-                    <i class="fab fa-linkedin"></i>
-                    <span data-i18n="contact_linkedin">LinkedIn</span>: <a href="https://www.linkedin.com/in/nawaf-mahsoun-493092204" target="_blank">linkedin.com/in/nawaf-mahsoun-493092204</a>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">
+                            <span data-translate="profile_name">Nawaf Mahsoun</span>
+                            <span data-translate="profile_title">.NET Developer</span>
+                        </h1>
+                        <p class="hero-description" data-translate="summary_content">
+                            Dedicated .NET Developer with 3 years of experience specializing in building robust web applications and APIs.
+                        </p>
+                        <div class="hero-cta">
+                            <a href="#work" class="btn btn-primary" data-translate="section_experience">View My Work</a>
+                            <a href="#contact" class="btn btn-secondary" data-translate="contact_email">Get in Touch</a>
+                        </div>
+                    </div>
+                    <div class="hero-visual">
+                        <div class="code-window">
+                            <div class="code-header">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <div class="code-content">
+                                <pre><code>public class Developer
+{
+    public string Name => "Nawaf Mahsoun";
+    public string Role => ".NET Developer";
+    public string[] Skills => new[] {
+        "ASP.NET Core MVC",
+        "Blazor",
+        "Entity Framework",
+        "Clean Architecture",
+        "xUnit Testing"
+    };
+}</code></pre>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="summary">
-            <h2 data-i18n="section_summary">PROFESSIONAL SUMMARY</h2>
-            <p data-i18n="summary_content">Dedicated .NET Developer with 3 years of experience specializing in building robust web applications and APIs using ASP.NET Core MVC and related technologies. Proficient in implementing Domain-Driven Design (DDD), Clean Architecture, and Repository Pattern. Experienced in unit testing with xUnit and mocking frameworks to ensure high-quality, maintainable code. Passionate about solving technical challenges and delivering scalable solutions that meet diverse business requirements.</p>
-        </section>
+        <section id="work" class="work">
+            <div class="container">
+                <h2 class="section-title" data-translate="section_experience">Professional Experience</h2>
+                <div class="work-grid">
+                    <article class="work-item">
+                        <div class="work-content">
+                            <span class="work-number">01</span>
+                            <h3 data-translate="job1_title">Site Manager</h3>
+                            <p data-translate="job1_desc1">Developed and maintained the company's e-commerce platform for selling cars, half cuts, and spare parts.</p>
+                            <div class="work-tech">
+                                <span data-translate="skill_prog1">ASP.NET Core MVC</span>
+                                <span data-translate="skill_prog4">Entity Framework</span>
+                                <span data-translate="skill_web4">Responsive Design</span>
+                            </div>
+                        </div>
+                        <div class="work-image">
+                            <img src="images/project1.jpg" alt="E-Commerce Platform">
+                        </div>
+                    </article>
 
-        <section class="experience">
-            <h2 data-i18n="section_experience">PROFESSIONAL EXPERIENCE</h2>
-            
-            <div class="job">
-                <div class="job-header">
-                    <div class="job-title">
-                        <h3 data-i18n="job1_title">Site Manager</h3>
-                        <p class="company" data-i18n="job1_company">Karman Trading for Cars</p>
-                    </div>
-                    <div class="job-meta">
-                        <p class="duration" data-i18n="job1_duration">May 2023 - July 2023</p>
-                        <p class="location" data-i18n="job1_location">Aleppo, Syria</p>
-                    </div>
-                </div>
-                <ul class="job-description">
-                    <li data-i18n="job1_desc1">Developed and maintained the company's e-commerce platform for selling cars, half cuts, and spare parts</li>
-                    <li data-i18n="job1_desc2">Implemented ASP.NET Core MVC with Clean Architecture principles to ensure maintainable and scalable codebase</li>
-                    <li data-i18n="job1_desc3">Created comprehensive unit tests using xUnit and Moq to ensure application reliability and quality</li>
-                    <li data-i18n="job1_desc4">Optimized API performance, improving data processing speed by 30% for clients</li>
-                    <li data-i18n="job1_desc5">Managed the website project efficiently, reducing delivery time by 20%</li>
-                </ul>
-            </div>
+                    <article class="work-item">
+                        <div class="work-content">
+                            <span class="work-number">02</span>
+                            <h3 data-translate="job2_title">Volunteer Developer</h3>
+                            <p data-translate="job2_desc1">Contributed to development of web applications for community services.</p>
+                            <div class="work-tech">
+                                <span data-translate="skill_prog3">Blazor</span>
+                                <span data-translate="skill_test1">xUnit Testing</span>
+                                <span data-translate="skill_arch2">Clean Architecture</span>
+                            </div>
+                        </div>
+                        <div class="work-image">
+                            <img src="images/project2.jpg" alt="Task Management System">
+                        </div>
+                    </article>
 
-            <div class="job">
-                <div class="job-header">
-                    <div class="job-title">
-                        <h3 data-i18n="job2_title">Volunteer Developer</h3>
-                        <p class="company" data-i18n="job2_company">Community Service Organization</p>
-                    </div>
-                    <div class="job-meta">
-                        <p class="duration" data-i18n="job2_duration">January 2023 - January 2024</p>
-                        <p class="location" data-i18n="job2_location">Aleppo, Syria</p>
-                    </div>
-                </div>
-                <ul class="job-description">
-                    <li data-i18n="job2_desc1">Contributed to development of web applications for community services</li>
-                    <li data-i18n="job2_desc2">Implemented responsive design using Bootstrap to ensure mobile-friendly interfaces</li>
-                    <li data-i18n="job2_desc3">Collaborated with team members to deliver high-quality software solutions</li>
-                    <li data-i18n="job2_desc4">Applied test-driven development practices using xUnit for feature implementation</li>
-                    <li data-i18n="job2_desc5">Conducted code reviews and implemented unit testing standards for the team</li>
-                </ul>
-            </div>
-
-            <div class="job">
-                <div class="job-header">
-                    <div class="job-title">
-                        <h3 data-i18n="job3_title">Freelance .NET Developer</h3>
-                        <p class="company" data-i18n="job3_company">Self-employed</p>
-                    </div>
-                    <div class="job-meta">
-                        <p class="duration" data-i18n="job3_duration">January 2022 - Present</p>
-                        <p class="location" data-i18n="job3_location">Aleppo, Syria</p>
-                    </div>
-                </div>
-                <ul class="job-description">
-                    <li data-i18n="job3_desc1">Designed and developed custom web applications using ASP.NET Core MVC and Blazor</li>
-                    <li data-i18n="job3_desc2">Built RESTful APIs for seamless integration with various client applications</li>
-                    <li data-i18n="job3_desc3">Implemented Entity Framework Core for efficient data access and management</li>
-                    <li data-i18n="job3_desc4">Created comprehensive test suites using xUnit and mock objects to ensure code quality</li>
-                    <li data-i18n="job3_desc5">Mentored 5 junior developers, enhancing team productivity by 25%</li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="achievements">
-            <h2 data-i18n="section_achievements">KEY ACHIEVEMENTS</h2>
-            <ul>
-                <li data-i18n="achievement1"><strong>API Optimization Success:</strong> Developed API that improved data processing speed by 30% for clients</li>
-                <li data-i18n="achievement2"><strong>Efficient Project Management:</strong> Successfully managed website project, reducing delivery time by 20%</li>
-                <li data-i18n="achievement3"><strong>Architecture Enhancement:</strong> Implemented clean architecture, increasing scalability by 40% in applications</li>
-                <li data-i18n="achievement4"><strong>Test Coverage Improvement:</strong> Increased unit test coverage from 60% to 95% using xUnit and mocking frameworks</li>
-                <li data-i18n="achievement5"><strong>Mentorship Achievement:</strong> Trained and mentored 5 junior developers, enhancing team productivity by 25%</li>
-            </ul>
-        </section>
-
-        <section class="education">
-            <h2 data-i18n="section_education">EDUCATION</h2>
-            <div class="education-item">
-                <div class="education-header">
-                    <div class="degree">
-                        <h3 data-i18n="edu_degree">Master of Engineering - MEng, Software Engineering</h3>
-                        <p class="institution" data-i18n="edu_institution">Ebla Private University</p>
-                    </div>
-                    <div class="education-meta">
-                        <p class="duration" data-i18n="edu_duration">October 2021 - Present (Expected graduation: December 2026)</p>
-                        <p class="location" data-i18n="edu_location">Aleppo, Syria</p>
-                    </div>
-                </div>
-                <ul class="education-details">
-                    <li data-i18n="edu_detail1">Specialization: Informatics and Communications Engineering in Software Engineering</li>
-                    <li data-i18n="edu_detail2">Relevant Coursework: Advanced Software Design, Database Systems, Web Application Development, Software Testing</li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="skills">
-            <h2 data-i18n="section_skills">TECHNICAL SKILLS</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3 data-i18n="skills_programming">Programming & Frameworks</h3>
-                    <ul>
-                        <li data-i18n="skill_prog1">ASP.NET Core MVC</li>
-                        <li data-i18n="skill_prog2">.NET Core / .NET</li>
-                        <li data-i18n="skill_prog3">Blazor</li>
-                        <li data-i18n="skill_prog4">Entity Framework Core</li>
-                        <li data-i18n="skill_prog5">REST API Development</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3 data-i18n="skills_testing">Testing & Quality Assurance</h3>
-                    <ul>
-                        <li data-i18n="skill_test1">xUnit Testing Framework</li>
-                        <li data-i18n="skill_test2">Moq Mocking Framework</li>
-                        <li data-i18n="skill_test3">Test-Driven Development (TDD)</li>
-                        <li data-i18n="skill_test4">Integration Testing</li>
-                        <li data-i18n="skill_test5">Unit Testing</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3 data-i18n="skills_web">Web Technologies</h3>
-                    <ul>
-                        <li data-i18n="skill_web1">HTML5</li>
-                        <li data-i18n="skill_web2">CSS3</li>
-                        <li data-i18n="skill_web3">Bootstrap</li>
-                        <li data-i18n="skill_web4">Responsive Web Design</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3 data-i18n="skills_architecture">Architecture & Methodologies</h3>
-                    <ul>
-                        <li data-i18n="skill_arch1">Domain-Driven Design (DDD)</li>
-                        <li data-i18n="skill_arch2">Clean Architecture</li>
-                        <li data-i18n="skill_arch3">Repository Pattern</li>
-                        <li data-i18n="skill_arch4">SOLID Principles</li>
-                        <li data-i18n="skill_arch5">Agile Development</li>
-                    </ul>
+                    <article class="work-item">
+                        <div class="work-content">
+                            <span class="work-number">03</span>
+                            <h3 data-translate="job3_title">Freelance .NET Developer</h3>
+                            <p data-translate="job3_desc1">Designed and developed custom web applications using ASP.NET Core MVC and Blazor.</p>
+                            <div class="work-tech">
+                                <span data-translate="skill_prog2">.NET Core</span>
+                                <span data-translate="skill_arch1">DDD</span>
+                                <span data-translate="skill_test5">Unit Testing</span>
+                            </div>
+                        </div>
+                        <div class="work-image">
+                            <img src="images/project3.jpg" alt="API Gateway">
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
 
-        <section class="languages">
-            <h2 data-i18n="section_languages">LANGUAGES</h2>
-            <ul>
-                <li data-i18n="language1"><strong>Arabic:</strong> Native</li>
-                <li data-i18n="language2"><strong>English:</strong> Advanced (C1) - Proficient in reading, writing, and professional communication</li>
-                <li data-i18n="language3"><strong>Turkish:</strong> Basic (A2) - Elementary proficiency</li>
-            </ul>
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title" data-translate="section_skills">Technical Skills</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p data-translate="summary_content">I'm a dedicated .NET Developer with 3 years of experience specializing in building robust web applications and APIs.</p>
+                        <div class="tech-stack">
+                            <h3 data-translate="skills_programming">Programming & Frameworks</h3>
+                            <div class="tech-grid">
+                                <div class="tech-item">
+                                    <i class="fab fa-microsoft"></i>
+                                    <span data-translate="skill_prog1">ASP.NET Core MVC</span>
+                                </div>
+                                <div class="tech-item">
+                                    <i class="fas fa-code"></i>
+                                    <span data-translate="skill_prog2">.NET Core</span>
+                                </div>
+                                <div class="tech-item">
+                                    <i class="fas fa-database"></i>
+                                    <span data-translate="skill_prog4">Entity Framework</span>
+                                </div>
+                                <div class="tech-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span data-translate="skill_test1">xUnit Testing</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Stack Section with Logos -->
+        <section id="tech-stack" class="tech-stack-section">
+            <div class="container">
+                <h2 class="section-title" data-translate="section_tech_stack">Technical Stack</h2>
+                <div class="frameworks-grid">
+                    <!-- .NET Core -->
+                    <div class="framework-card">
+                        <div class="framework-logo">
+                            <img src="images/logos/dotnet-logo.svg" alt=".NET Core Logo">
+                        </div>
+                        <h3 class="framework-name" data-translate="tech_dotnet_name">.NET Core</h3>
+                        <p class="framework-desc" data-translate="tech_dotnet_desc">Building robust, high-performance backend services and APIs</p>
+                    </div>
+                    
+                    <!-- ASP.NET Core MVC -->
+                    <div class="framework-card">
+                        <div class="framework-logo">
+                            <img src="images/logos/aspnet-logo.svg" alt="ASP.NET Core Logo">
+                        </div>
+                        <h3 class="framework-name" data-translate="tech_aspnet_name">ASP.NET Core MVC</h3>
+                        <p class="framework-desc" data-translate="tech_aspnet_desc">Developing scalable web applications with Model-View-Controller architecture</p>
+                    </div>
+
+                    <!-- Blazor -->
+                    <div class="framework-card">
+                        <div class="framework-logo">
+                            <img src="images/logos/blazor-logo.svg" alt="Blazor Logo">
+                        </div>
+                        <h3 class="framework-name" data-translate="tech_blazor_name">Blazor</h3>
+                        <p class="framework-desc" data-translate="tech_blazor_desc">Creating interactive web UIs using C# instead of JavaScript</p>
+                    </div>
+
+                    <!-- Entity Framework Core -->
+                    <div class="framework-card">
+                        <div class="framework-logo">
+                            <img src="images/logos/ef-logo.svg" alt="Entity Framework Logo">
+                        </div>
+                        <h3 class="framework-name" data-translate="tech_ef_name">Entity Framework Core</h3>
+                        <p class="framework-desc" data-translate="tech_ef_desc">ORM for database access with LINQ to Entities support</p>
+                    </div>
+
+                    <!-- SQL Server -->
+                    <div class="framework-card">
+                        <div class="framework-logo">
+                            <i class="fas fa-database fa-3x" style="color: #0078D4;"></i>
+                        </div>
+                        <h3 class="framework-name" data-translate="tech_sql_name">SQL Server</h3>
+                        <p class="framework-desc" data-translate="tech_sql_desc">Designing and optimizing relational database solutions</p>
+                    </div>
+
+                    <!-- Azure -->
+                    <div class="framework-card">
+                        <div class="framework-logo">
+                            <i class="fab fa-microsoft fa-3x" style="color: #0078D4;"></i>
+                        </div>
+                        <h3 class="framework-name" data-translate="tech_azure_name">Azure Cloud</h3>
+                        <p class="framework-desc" data-translate="tech_azure_desc">Deploying scalable applications with Azure App Services, Functions and more</p>
+                    </div>
+
+                    <!-- xUnit -->
+                    <div class="framework-card">
+                        <div class="framework-logo">
+                            <img src="images/logos/xunit-logo.svg" alt="xUnit Logo">
+                        </div>
+                        <h3 class="framework-name" data-translate="tech_xunit_name">xUnit</h3>
+                        <p class="framework-desc" data-translate="tech_xunit_desc">Implementing unit and integration tests for reliable code</p>
+                    </div>
+
+                    <!-- Clean Architecture -->
+                    <div class="framework-card">
+                        <div class="framework-logo">
+                            <i class="fas fa-layer-group fa-3x" style="color: #007ACC;"></i>
+                        </div>
+                        <h3 class="framework-name" data-translate="tech_clean_name">Clean Architecture</h3>
+                        <p class="framework-desc" data-translate="tech_clean_desc">Designing systems with separation of concerns and dependency inversion</p>
+                    </div>
+
+                    <!-- Domain-Driven Design -->
+                    <div class="framework-card">
+                        <div class="framework-logo">
+                            <i class="fas fa-project-diagram fa-3x" style="color: #F15B2A;"></i>
+                        </div>
+                        <h3 class="framework-name" data-translate="tech_ddd_name">Domain-Driven Design</h3>
+                        <p class="framework-desc" data-translate="tech_ddd_desc">Modeling complex domains with ubiquitous language and bounded contexts</p>
+                    </div>
+                    
+                    <!-- Docker -->
+                    <div class="framework-card">
+                        <div class="framework-logo">
+                            <i class="fab fa-docker fa-3x" style="color: #2496ED;"></i>
+                        </div>
+                        <h3 class="framework-name" data-translate="tech_docker_name">Docker</h3>
+                        <p class="framework-desc" data-translate="tech_docker_desc">Containerizing applications for consistent deployment across environments</p>
+                    </div>
+
+                    <!-- CI/CD -->
+                    <div class="framework-card">
+                        <div class="framework-logo">
+                            <i class="fas fa-code-branch fa-3x" style="color: #40AF4A;"></i>
+                        </div>
+                        <h3 class="framework-name" data-translate="tech_cicd_name">CI/CD Pipelines</h3>
+                        <p class="framework-desc" data-translate="tech_cicd_desc">Automating build, test and deployment processes with Azure DevOps</p>
+                    </div>
+
+                    <!-- Git/GitHub -->
+                    <div class="framework-card">
+                        <div class="framework-logo">
+                            <i class="fab fa-github fa-3x" style="color: #171515;"></i>
+                        </div>
+                        <h3 class="framework-name" data-translate="tech_git_name">Git & GitHub</h3>
+                        <p class="framework-desc" data-translate="tech_git_desc">Version control and collaborative software development</p>
+                    </div>
+
+                    <!-- HTML & CSS -->
+                    <div class="framework-card">
+                        <div class="framework-logo">
+                            <img src="images/logos/html-css-logo.svg" alt="HTML & CSS Logo">
+                        </div>
+                        <h3 class="framework-name" data-translate="tech_html_name">HTML & CSS</h3>
+                        <p class="framework-desc" data-translate="tech_html_desc">Creating responsive and accessible web interfaces</p>
+                    </div>
+
+                    <!-- JavaScript -->
+                    <div class="framework-card">
+                        <div class="framework-logo">
+                            <i class="fab fa-js-square fa-3x" style="color: #F7DF1E;"></i>
+                        </div>
+                        <h3 class="framework-name" data-translate="tech_js_name">JavaScript</h3>
+                        <p class="framework-desc" data-translate="tech_js_desc">Enhancing user interfaces with dynamic client-side functionality</p>
+                    </div>
+
+                    <!-- Agile/Scrum -->
+                    <div class="framework-card">
+                        <div class="framework-logo">
+                            <i class="fas fa-tasks fa-3x" style="color: #0091EA;"></i>
+                        </div>
+                        <h3 class="framework-name" data-translate="tech_agile_name">Agile Methodology</h3>
+                        <p class="framework-desc" data-translate="tech_agile_desc">Working in Scrum teams with sprint planning and iterative development</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Development Tools Section -->
+        <section class="section tech-stack-section" id="dev-tools">
+            <div class="container">
+                <h2 class="section-title" data-translate="section_dev_tools">Development Tools</h2>
+                <div class="frameworks-grid">
+                    <!-- Visual Studio 2022 -->
+                    <div class="framework-card">
+                        <div class="framework-logo">
+                            <img src="images/logos/vs-logo.svg" alt="Visual Studio Logo">
+                        </div>
+                        <h3 class="framework-name" data-translate="tool_vs_name">Visual Studio 2022</h3>
+                        <p class="framework-desc" data-translate="tool_vs_desc">Primary IDE for C# and .NET development with powerful debugging tools</p>
+                    </div>
+
+                    <!-- VS Code -->
+                    <div class="framework-card">
+                        <div class="framework-logo">
+                            <img src="images/logos/vscode-logo.svg" alt="VS Code Logo">
+                        </div>
+                        <h3 class="framework-name" data-translate="tool_vscode_name">VS Code</h3>
+                        <p class="framework-desc" data-translate="tool_vscode_desc">Lightweight code editor for front-end development and quick edits</p>
+                    </div>
+
+                    <!-- Postman -->
+                    <div class="framework-card">
+                        <div class="framework-logo">
+                            <img src="images/logos/postman-logo.svg" alt="Postman Logo">
+                        </div>
+                        <h3 class="framework-name" data-translate="tool_postman_name">Postman</h3>
+                        <p class="framework-desc" data-translate="tool_postman_desc">API development and testing with automated test suites</p>
+                    </div>
+
+                    <!-- Swagger -->
+                    <div class="framework-card">
+                        <div class="framework-logo">
+                            <img src="images/logos/swagger-logo.svg" alt="Swagger Logo">
+                        </div>
+                        <h3 class="framework-name" data-translate="tool_swagger_name">Swagger</h3>
+                        <p class="framework-desc" data-translate="tool_swagger_desc">API documentation and interactive testing interface</p>
+                    </div>
+
+                    <!-- Rider -->
+                    <div class="framework-card">
+                        <div class="framework-logo">
+                            <img src="images/logos/rider-logo.svg" alt="Rider Logo">
+                        </div>
+                        <h3 class="framework-name" data-translate="tool_rider_name">Rider</h3>
+                        <p class="framework-desc" data-translate="tool_rider_desc">Cross-platform .NET IDE with advanced code analysis</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title" data-translate="contact_email">Get in Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:nawafmahsoun11@gmail.com" data-translate="contact_email">Email</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span data-translate="contact_phone">Phone</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <a href="https://www.linkedin.com/in/nawaf-mahsoun-493092204" target="_blank" data-translate="contact_linkedin">LinkedIn</a>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/nawaf-mahsoun-493092204" target="_blank" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/nawafmahsoun" target="_blank" class="social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://twitter.com/nawafmahsoun" target="_blank" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/nawafmahsoun" target="_blank" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/nawaf.mahsoun" target="_blank" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://wa.me/963957449479" target="_blank" class="social-link whatsapp" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="tel:+963957449479" class="social-link phone" aria-label="Call">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
     <footer>
         <div class="container">
-            <p data-i18n="footer_copyright">&copy; 2025 Nawaf Mahsoun. All rights reserved.</p>
+            <p data-translate="footer_copyright">© 2024 Nawaf Mahsoun. All rights reserved.</p>
         </div>
     </footer>
+
+    <script src="js/dark-mode.js"></script>
+    <script src="js/language.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/smooth-scroll.js"></script>
+    <script src="js/back-to-top.js"></script>
 </body>
 </html>
